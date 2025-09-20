@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphone Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Head<span>Wave</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="cart-icon">
+          🛒 <span id="cart-count">0</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Feel the <span>Sound</span></h1>
+      <p>Discover premium headphones with unbeatable clarity and comfort.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At HeadWave, we bring you the finest headphones crafted for music lovers, gamers, and professionals. Experience immersive sound and unmatched comfort at unbeatable prices.</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      
+      <div class="product-card">
+        <img src="data:image/jpeg;base64,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" alt="HeadWave Pro">
+        <h3>HeadWave Pro</h3>
+        <p>$120</p>
+        <button class="add-to-cart" data-name="HeadWave Pro" data-price="120">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROuYvtXYB3ZoQTzZXnwKkpLdLZe9sdFj5Czw&s" alt="Bass Boost X">
+        <h3>Bass Boost X</h3>
+        <p>$90</p>
+        <button class="add-to-cart" data-name="Bass Boost X" data-price="90">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pDTVqnTsIkAtPQNwxltS1KDSLPrZA09CMA&s" alt="Studio Max">
+        <h3>Studio Max</h3>
+        <p>$150</p>
+        <button class="add-to-cart" data-name="Studio Max" data-price="150">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl39ySAoVIFozjaaUxOJEpLHNqzW7tOx4Bag&s" alt="SoundCore Lite">
+        <h3>SoundCore Lite</h3>
+        <p>$70</p>
+        <button class="add-to-cart" data-name="SoundCore Lite" data-price="70">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBl-BCKsB-lpIzEK1wyVyqZldsoVwhSP4qNQ&s" alt="Beat Vibe">
+        <h3>Beat Vibe</h3>
+        <p>$110</p>
+        <button class="add-to-cart" data-name="Beat Vibe" data-price="110">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpltYD9c9keYG3ghbPUFCwXrtLn6dW1yKyKA&s" alt="Sonic Blast">
+        <h3>Sonic Blast</h3>
+        <p>$95</p>
+        <button class="add-to-cart" data-name="Sonic Blast" data-price="95">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p class="total">Total: $<span id="cart-total">0</span></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@headwave.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HeadWave. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
